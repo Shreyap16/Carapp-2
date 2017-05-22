@@ -1,0 +1,29 @@
+.header{
+  background-image: linear-gradient(#ff99c2, #ff3385, #99003d);
+  text-align: center;
+  color: black;
+  border-radius: 10px;
+  padding: 1 0 1 0;
+}
+
+body{
+  text-align: center;
+  border-style: solid;
+  border: 3 3 3 3;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+question{
+  text-align: center;
+  border-style: solid;
+  border: 3 3 3 3;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  background-color: #eee;
+
+}

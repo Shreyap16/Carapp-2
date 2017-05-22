@@ -1,0 +1,58 @@
+
+<h2>Home</h2>
+
+
+<!-- NOTE: MAIN CONTENT OF PAGE -->
+<div  id="mainContent" class="container">
+<!-- NOTE: IMMEDIATE SEARCH WITH DEBOUNCING -->
+  <div id="searchBar" class="container">
+    <input type="text" placeholder="Search Vehicle"
+      ng-model="controller.search"
+      ng-model-options="{debounce:1000}"
+      ng-change="controller.fetch()" /> <br>
+  </div>
+  <ul>
+      <li ng-repeat="car in controller.cars">
+          {{car.title}}
+      </li>
+  </ul>
+<!-- NOTE: END OF SEARCH -->
+<!-- NOTE: DROPDOWN -->
+  <div id="dropDown" class="container">
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+        </ul>
+    </div>
+  </div>
+<!-- NOTE: END OF DROWNDOWN -->
+<!-- NOTE: MODAL DIALOG WITH POP UP -->
+  <div id="modalPopup" class="container">
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- NOTE: ENF OF MODAL -->
+</div>
+<!-- NOTE: END OF MAIN CONTENT -->
